@@ -7,15 +7,17 @@
 
 import AppKit
 
+let dockedWidth: CGFloat = 400.0
+
 class CustomWindow: NSWindow {
-    private var dockedWidth: CGFloat = 320.0
+    
     private var dockedFrame: NSRect {
         var rect = NSScreen.main!.visibleFrame
         rect.size.width = dockedWidth
         return rect
     }
 
-    private var floatingFrame = NSRect(x: 300, y: 300, width: 320, height: 240)
+    private var floatingFrame = NSRect(x: 300, y: 300, width: 375, height: 240)
 
     enum WindowMode {
         case floating, docked
@@ -48,7 +50,6 @@ class CustomWindow: NSWindow {
         styleMask.remove(.titled)
         
         setFrame(dockedFrame, display: true, animate: true)
-        presentationState = .presented
     }
 
     override func awakeFromNib() {
@@ -66,15 +67,6 @@ class CustomWindow: NSWindow {
         setFrame(dockedFrame, display: true, animate: true)
     }
 
-    enum PresentationState {
-        case presented
-        case dismissed
-    }
-    
-    var presentationState: PresentationState = .presented
-    
-    var panGestureInProgress = false
-    
     private func setUpInteractiveSwipeGestureMonitor() {
         NSEvent.addLocalMonitorForEvents(matching: .scrollWheel) { [weak self] event in
             guard let self, self.mode == .docked else { return event }
@@ -82,10 +74,6 @@ class CustomWindow: NSWindow {
             let windowFrame = frame
 
             if self.mode == .docked {
-                if event.phase.contains(.began) {
-                    panGestureInProgress = true
-                }
-
                 if event.phase.contains(.changed) {
                     var newX = windowFrame.origin.x + event.scrollingDeltaX
                     newX = min(max(newX, -dockedWidth), 0)
@@ -93,8 +81,6 @@ class CustomWindow: NSWindow {
                 }
 
                 if event.phase.contains(.ended) || event.phase.contains(.cancelled) {
-                    panGestureInProgress = false
-                    
                     let shouldShowWindow = -dockedWidth / 4 <= windowFrame.origin.x
                     let targetX: CGFloat = shouldShowWindow ? 0 : -dockedWidth
                     
@@ -107,7 +93,7 @@ class CustomWindow: NSWindow {
                     }
                 }
             }
-
+            
             return event
         }
     }

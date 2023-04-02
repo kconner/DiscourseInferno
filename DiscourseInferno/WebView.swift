@@ -9,6 +9,7 @@ import SwiftUI
 import WebKit
 
 struct WebView: NSViewRepresentable {
+    
     let url: URL
 
     func makeNSView(context: Context) -> WKWebView {
@@ -27,8 +28,29 @@ struct WebView: NSViewRepresentable {
     }
 
     class Coordinator: NSObject, WKNavigationDelegate {
-        // Implement delegate methods as needed
+        
+        func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
+            print("WebView didFinish navigation")
+            
+            // No horizontal scrolling please
+            let script = "document.body.style.overflowX = 'hidden';"
+            webView.evaluateJavaScript(script) { _, error in
+                if let error = error {
+                    print("Error evaluating JavaScript: \(error.localizedDescription)")
+                }
+            }
+        }
+
+        func webView(_ webView: WKWebView, didFail navigation: WKNavigation!, withError error: Error) {
+            print("WebView didFail navigation with error: \(error.localizedDescription)")
+        }
+
+        func webView(_ webView: WKWebView, didFailProvisionalNavigation navigation: WKNavigation!, withError error: Error) {
+            print("WebView didFailProvisionalNavigation with error: \(error.localizedDescription)")
+        }
+
     }
+    
 }
 
 struct WebView_Previews: PreviewProvider {
