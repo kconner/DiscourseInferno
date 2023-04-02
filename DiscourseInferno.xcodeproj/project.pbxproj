@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2C4DCC2629D9313D00A79D8E /* CustomWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C4DCC2529D9313D00A79D8E /* CustomWindow.swift */; };
+		2C4DCC2829D9315000A79D8E /* CustomWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C4DCC2729D9315000A79D8E /* CustomWindowController.swift */; };
 		2CECA86629D92F6D00B0A907 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CECA86529D92F6D00B0A907 /* AppDelegate.swift */; };
 		2CECA86829D92F6D00B0A907 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CECA86729D92F6D00B0A907 /* ViewController.swift */; };
 		2CECA86A29D92F6E00B0A907 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2CECA86929D92F6E00B0A907 /* Assets.xcassets */; };
@@ -14,6 +16,8 @@
 		2CECA87829D92F6E00B0A907 /* DiscourseInfernoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CECA87729D92F6E00B0A907 /* DiscourseInfernoTests.swift */; };
 		2CECA88229D92F6E00B0A907 /* DiscourseInfernoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CECA88129D92F6E00B0A907 /* DiscourseInfernoUITests.swift */; };
 		2CECA88429D92F6E00B0A907 /* DiscourseInfernoUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CECA88329D92F6E00B0A907 /* DiscourseInfernoUITestsLaunchTests.swift */; };
+		2CECA89129D9302800B0A907 /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CECA89029D9302800B0A907 /* WebView.swift */; };
+		2CECA89329D9304100B0A907 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CECA89229D9304100B0A907 /* ContentView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +38,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2C4DCC2529D9313D00A79D8E /* CustomWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomWindow.swift; sourceTree = "<group>"; };
+		2C4DCC2729D9315000A79D8E /* CustomWindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomWindowController.swift; sourceTree = "<group>"; };
 		2CECA86229D92F6D00B0A907 /* DiscourseInferno.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DiscourseInferno.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2CECA86529D92F6D00B0A907 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2CECA86729D92F6D00B0A907 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -45,6 +51,8 @@
 		2CECA87D29D92F6E00B0A907 /* DiscourseInfernoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DiscourseInfernoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2CECA88129D92F6E00B0A907 /* DiscourseInfernoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscourseInfernoUITests.swift; sourceTree = "<group>"; };
 		2CECA88329D92F6E00B0A907 /* DiscourseInfernoUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscourseInfernoUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		2CECA89029D9302800B0A907 /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
+		2CECA89229D9304100B0A907 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +108,10 @@
 				2CECA86929D92F6E00B0A907 /* Assets.xcassets */,
 				2CECA86B29D92F6E00B0A907 /* Main.storyboard */,
 				2CECA86E29D92F6E00B0A907 /* DiscourseInferno.entitlements */,
+				2CECA89029D9302800B0A907 /* WebView.swift */,
+				2CECA89229D9304100B0A907 /* ContentView.swift */,
+				2C4DCC2529D9313D00A79D8E /* CustomWindow.swift */,
+				2C4DCC2729D9315000A79D8E /* CustomWindowController.swift */,
 			);
 			path = DiscourseInferno;
 			sourceTree = "<group>";
@@ -251,7 +263,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2CECA89129D9302800B0A907 /* WebView.swift in Sources */,
 				2CECA86829D92F6D00B0A907 /* ViewController.swift in Sources */,
+				2C4DCC2829D9315000A79D8E /* CustomWindowController.swift in Sources */,
+				2CECA89329D9304100B0A907 /* ContentView.swift in Sources */,
+				2C4DCC2629D9313D00A79D8E /* CustomWindow.swift in Sources */,
 				2CECA86629D92F6D00B0A907 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
