@@ -10,7 +10,6 @@
 		2C4DCC2629D9313D00A79D8E /* CustomWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C4DCC2529D9313D00A79D8E /* CustomWindow.swift */; };
 		2C4DCC2829D9315000A79D8E /* CustomWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C4DCC2729D9315000A79D8E /* CustomWindowController.swift */; };
 		2CECA86629D92F6D00B0A907 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CECA86529D92F6D00B0A907 /* AppDelegate.swift */; };
-		2CECA86829D92F6D00B0A907 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CECA86729D92F6D00B0A907 /* ViewController.swift */; };
 		2CECA86A29D92F6E00B0A907 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2CECA86929D92F6E00B0A907 /* Assets.xcassets */; };
 		2CECA86D29D92F6E00B0A907 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2CECA86B29D92F6E00B0A907 /* Main.storyboard */; };
 		2CECA87829D92F6E00B0A907 /* DiscourseInfernoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CECA87729D92F6E00B0A907 /* DiscourseInfernoTests.swift */; };
@@ -42,7 +41,6 @@
 		2C4DCC2729D9315000A79D8E /* CustomWindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomWindowController.swift; sourceTree = "<group>"; };
 		2CECA86229D92F6D00B0A907 /* DiscourseInferno.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DiscourseInferno.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2CECA86529D92F6D00B0A907 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		2CECA86729D92F6D00B0A907 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		2CECA86929D92F6E00B0A907 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2CECA86C29D92F6E00B0A907 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2CECA86E29D92F6E00B0A907 /* DiscourseInferno.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DiscourseInferno.entitlements; sourceTree = "<group>"; };
@@ -104,7 +102,6 @@
 			isa = PBXGroup;
 			children = (
 				2CECA86529D92F6D00B0A907 /* AppDelegate.swift */,
-				2CECA86729D92F6D00B0A907 /* ViewController.swift */,
 				2CECA86929D92F6E00B0A907 /* Assets.xcassets */,
 				2CECA86B29D92F6E00B0A907 /* Main.storyboard */,
 				2CECA86E29D92F6E00B0A907 /* DiscourseInferno.entitlements */,
@@ -264,7 +261,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				2CECA89129D9302800B0A907 /* WebView.swift in Sources */,
-				2CECA86829D92F6D00B0A907 /* ViewController.swift in Sources */,
 				2C4DCC2829D9315000A79D8E /* CustomWindowController.swift in Sources */,
 				2CECA89329D9304100B0A907 /* ContentView.swift in Sources */,
 				2C4DCC2629D9313D00A79D8E /* CustomWindow.swift in Sources */,
